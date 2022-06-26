@@ -1,37 +1,32 @@
-/**
- * @author: Markus Konietzka
- * @date: 26-06-2022
- * @version 1.0
- *
- * @description: encrypt(), decrypt(),
- *
- * @todo:   decrypt() - decrypt chipertext given as a String
- *          printCiphertext() - print in command Window
- *          encrypt() - with parameter
- */
+package classicCrypto.caesar;
 
-package classicCrypto.polybius;
+import classicCrypto.caesar.Caesar;
 
-import java.util.Arrays;
+public class CaesarFunc {
 
-public class Polybius {
+    String plaintext = "";
 
-    public char[][] square = {
-            {'A','F','L','Q','V'},
-            {'B','G','M','R','W'},
-            {'C','H','N','S','X'},
-            {'D','I','O','T','Y'},
-            {'E','K','P','U','Z'}};
+    Caesar caesar = new Caesar(plaintext);
 
-    public static String plainText = "";
-    public static String chiperText = "";
 
-    public static String encrypt(String input) {
-        char[] tmp = input.toCharArray();
-        String[] result = new String[tmp.length];
-        String retResult;
 
-        for (int i = 0; i < tmp.length; i++) {
+    public void encrypt(int key) {
+
+        // 1. foo(changeCharToNum())
+        // 2. encrypt - Algorithm
+        // 3. foo(changeNumToChar())
+    } //todo
+
+    public void decrypt(int key) {
+
+        // 1. foo(changeCharToNum())
+        // 2. decrypt - Algorithm
+        // 3. foo(changeNumToChar())
+    } //todo
+
+    public void changeNumToChar() { //todo
+
+        for (int i = 0; i < inputChar.length; i++) {
             switch (tmp[i]) {
                 case 'A':
                     result[i] = "11";
@@ -112,8 +107,7 @@ public class Polybius {
                     break;
             }
         }
-        retResult = Arrays.toString(result);
-        return retResult;
     }
 
+    public void changeCharToNum(char[] inputNum) {} //todo
 }
